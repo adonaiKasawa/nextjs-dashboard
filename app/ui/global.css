@@ -16,3 +16,78 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+
+.video-player-layout {
+  transform: rotate(-0.476deg);
+}
+
+.video-player-viewer {
+  flex-shrink: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  /* backdrop-filter: blur(40px); */
+  border-radius: 16px;
+}
+
+
+.video-player-description {
+  width: "100%";
+  height: 100px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.video-player-blur {
+  position: absolute;
+  top: 0px;
+  flex-shrink: 0;
+  filter: blur(77px);
+  z-index: -10;
+}
+
+.video-player-description-img-blur1 {
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  /* background: url(<path-to-image>), lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(165, 239, 255, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%); */
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(50px);
+}
+
+.video-player-description-frame {
+  display: flex;
+  width: "100%";
+  align-items: center;
+}
+
+.video-player-description-frame-content-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background-color: red;
+}
+
+.video-player-description-frame-content-2 {
+  display: flex;
+  width: "100%";
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.video-player-controler-action {
+  display: flex;
+  width: "100%";
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-player-controler-timer-slider {
+  display: flex;
+  width: "100%";
+  justify-content: space-between;
+  align-items: center;
+}
+
